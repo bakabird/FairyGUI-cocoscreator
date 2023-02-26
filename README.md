@@ -6,6 +6,7 @@ Official website: [www.fairygui.com](https://www.fairygui.com)
 
 # 关于版本
 * master 适用于CocosCreator 2.4或更新的版本
+* ccc3.7 使用于CocosCreator 3.7及以上版本
 * ccc3.0 适用于CocosCreator 3.0及以上版本
 * ccc2.1-2.3 适用于CocosCreator 2.1-2.3版本
 * ccc2.0 适用于CocosCreator 2.0版本
