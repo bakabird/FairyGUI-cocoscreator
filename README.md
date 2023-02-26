@@ -15,6 +15,7 @@ Official website: [www.fairygui.com](https://www.fairygui.com)
 
 # 项目中使用 fairyGui 库
 
+在 cc 项目根目录的下执行命令 `npm i fairygui-ccc370`，完成安装后重启编辑器。
 
 # 编译源码
 使用VSC打开`source`目录
