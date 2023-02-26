@@ -1,12 +1,12 @@
 {
-  "name": "fairygui-cc",
-  "version": "1.1.1",
-  "description": "A GUI Editor & framework for cocos creator",
+  "name": "fairygui-ccc370",
+  "version": "1.0.1",
+  "description": "fairygui for cocoscreator v3.7.0",
   "main": "dist/fairygui.mjs",
   "types": "dist/fairygui.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fairygui/FairyGUI-cocoscreator"
+    "url": "https://github.com/bakabird/FairyGUI-cocoscreator/tree/ccc3.7"
   },
   "files": [
     "dist/fairygui.mjs",
@@ -17,7 +17,7 @@
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "guzhu",
+  "author": "bakabird",
   "license": "MIT",
   "homepage": "https://fairygui.com/",
   "dependencies": {
@@ -31,6 +31,7 @@
     "gulp": "^4.0.2",
     "gulp-rename": "^2.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
-    "gulp-uglify-es": "^2.0.0"
+    "gulp-uglify-es": "^2.0.0",
+    "rollup": "^3.0.1"
   }
 }

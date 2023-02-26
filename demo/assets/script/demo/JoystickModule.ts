@@ -1,5 +1,5 @@
 import { EventTarget, Vec2 } from "cc";
-import * as fgui from "fairygui-cc";
+import * as fgui from "fairygui-ccc370";
 
 export default class JoystickModule extends EventTarget {
     private _InitX: number;

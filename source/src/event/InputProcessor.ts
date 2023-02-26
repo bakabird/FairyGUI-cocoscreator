@@ -1,4 +1,4 @@
-import { Component, Vec2, RichText, sys, Node, Touch, Event, EventMouse, EventTouch, director, Vec3, ccenum } from "cc";
+import { Component, Vec2, RichText, sys, Node, Touch, Event, EventMouse, EventTouch, director, Vec3, ccenum, game } from "cc";
 import { GObject } from "../GObject";
 import { GRichTextField } from "../GRichTextField";
 import { UIContentScaler } from "../UIContentScaler";
@@ -411,7 +411,7 @@ export class InputProcessor extends Component {
     private setEnd(ti: TouchInfo) {
         ti.began = false;
 
-        let now = director.getTotalTime() / 1000;
+        let now = game.totalTime / 1000;
         let elapsed = now - ti.lastClickTime;
 
         if (elapsed < 0.45) {

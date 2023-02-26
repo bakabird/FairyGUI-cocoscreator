@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.12",
+  "ver": "2.3.2",
   "importer": "fbx",
   "imported": true,
   "uuid": "0ab3142a-6968-4073-95af-026bc3b23623",
@@ -175,6 +175,23 @@
         "gltfIndex": 9
       }
     },
+    "baeab": {
+      "importer": "gltf-embeded-image",
+      "uuid": "0ab3142a-6968-4073-95af-026bc3b23623@baeab",
+      "displayName": "",
+      "id": "baeab",
+      "name": "seafloor.jpg.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".jpg",
+        ".json"
+      ],
+      "subMetas": {}
+    },
     "eeccb": {
       "importer": "gltf-embeded-image",
       "uuid": "0ab3142a-6968-4073-95af-026bc3b23623@eeccb",
@@ -204,8 +221,8 @@
       "ver": "1.0.3",
       "imported": true,
       "files": [
-        ".png",
-        ".json"
+        ".json",
+        ".png"
       ],
       "subMetas": {}
     },
@@ -223,10 +240,10 @@
         "mipfilter": "none",
         "premultiplyAlpha": false,
         "anisotropy": 1,
-        "isUuid": false,
-        "imageUuidOrDatabaseUri": "db://assets/model/helloWorld/seafloor.jpg"
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "0ab3142a-6968-4073-95af-026bc3b23623@baeab"
       },
-      "ver": "1.0.21",
+      "ver": "1.0.22",
       "imported": true,
       "files": [
         ".json"
@@ -250,7 +267,7 @@
         "isUuid": true,
         "imageUuidOrDatabaseUri": "0ab3142a-6968-4073-95af-026bc3b23623@eeccb"
       },
-      "ver": "1.0.21",
+      "ver": "1.0.22",
       "imported": true,
       "files": [
         ".json"
@@ -274,7 +291,7 @@
         "isUuid": true,
         "imageUuidOrDatabaseUri": "0ab3142a-6968-4073-95af-026bc3b23623@3b6f8"
       },
-      "ver": "1.0.21",
+      "ver": "1.0.22",
       "imported": true,
       "files": [
         ".json"
@@ -301,8 +318,8 @@
   "userData": {
     "imageMetas": [
       {
-        "name": "seafloor",
-        "uri": "db://assets/model/helloWorld/seafloor.jpg"
+        "name": "seafloor.jpg",
+        "uri": "0ab3142a-6968-4073-95af-026bc3b23623@baeab"
       },
       {
         "name": "stone.jpg",
@@ -344,6 +361,9 @@
     },
     "dumpMaterials": true,
     "materialDumpDir": "db://assets/material",
-    "legacyFbxImporter": true
+    "legacyFbxImporter": true,
+    "fbx": {
+      "smartMaterialEnabled": false
+    }
   }
 }

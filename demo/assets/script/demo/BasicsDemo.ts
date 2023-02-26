@@ -1,6 +1,6 @@
 import { _decorator, Component, Node, Color, Rect, Vec2 } from 'cc';
 const { ccclass, property } = _decorator;
-import * as fgui from "fairygui-cc";
+import * as fgui from "fairygui-ccc370";
 
 import { WindowA, WindowB } from "./TestWin";
 

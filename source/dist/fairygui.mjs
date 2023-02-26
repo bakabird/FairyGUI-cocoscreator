@@ -1,4 +1,4 @@
-import { gfx, RenderComponent, Event as Event$1, Vec2, Node, game, director, macro, Color, Layers, Font, resources, UITransform, UIOpacity, Rect, Component, Vec3, Graphics, misc, Sprite, Size, view, BufferAsset, AssetManager, Asset, assetManager, Texture2D, SpriteFrame, BitmapFont, sp, dragonBones, ImageAsset, AudioClip, path, Label, LabelOutline, LabelShadow, RichText, SpriteAtlas, sys, EventMouse, EventTarget, Mask, math, isValid, View, AudioSourceComponent, EditBox } from 'cc';
+import { gfx, UIRenderer, Event as Event$1, Vec2, Node, game, director, macro, Color, Layers, Font, resources, Vec3, Rect, UITransform, UIOpacity, Component, Graphics, misc, Sprite, Size, screen, view, ImageAsset, AudioClip, BufferAsset, AssetManager, Asset, assetManager, Texture2D, SpriteFrame, BitmapFont, sp, dragonBones, path, Label, LabelOutline, LabelShadow, SpriteAtlas, RichText, sys, EventMouse, EventTarget, Mask, math, isValid, View, AudioSourceComponent, EditBox } from 'cc';
 import { EDITOR } from 'cc/env';
 
 var ButtonMode;
@@ -213,7 +213,7 @@ var BlendMode;
 class BlendModeUtils {
     static apply(node, blendMode) {
         let f = factors[blendMode];
-        let renderers = node.getComponentsInChildren(RenderComponent);
+        let renderers = node.getComponentsInChildren(UIRenderer);
         renderers.forEach(element => {
             element.srcBlendFactor = f[0];
             element.dstBlendFactor = f[1];
@@ -236,7 +236,7 @@ const factors = [
     [gfx.BlendFactor.ONE, gfx.BlendFactor.ZERO],
     [gfx.BlendFactor.SRC_ALPHA, gfx.BlendFactor.ONE_MINUS_SRC_ALPHA],
     [gfx.BlendFactor.SRC_ALPHA, gfx.BlendFactor.ONE_MINUS_SRC_ALPHA],
-    [gfx.BlendFactor.SRC_ALPHA, gfx.BlendFactor.ONE_MINUS_SRC_ALPHA],
+    [gfx.BlendFactor.SRC_ALPHA, gfx.BlendFactor.ONE_MINUS_SRC_ALPHA], //custom2
 ];
 
 class Event extends Event$1 {
@@ -4534,7 +4534,7 @@ UIContentScaler.scaleFactor = 1;
 UIContentScaler.scaleLevel = 0;
 UIContentScaler.rootSize = new Size();
 function updateScaler() {
-    let size = view.getCanvasSize();
+    let size = screen.windowSize;
     size.width /= view.getScaleX();
     size.height /= view.getScaleY();
     UIContentScaler.rootSize.set(size);
@@ -5846,6 +5846,7 @@ class GTextField extends GObject {
     }
     createRenderer() {
         this._label = this._node.addComponent(Label);
+        this._label.string = "";
         this.autoSize = AutoSizeType.Both;
     }
     set text(value) {
@@ -6738,7 +6739,7 @@ class InputProcessor extends Component {
     }
     setEnd(ti) {
         ti.began = false;
-        let now = director.getTotalTime() / 1000;
+        let now = game.totalTime / 1000;
         let elapsed = now - ti.lastClickTime;
         if (elapsed < 0.45) {
             if (ti.clickCount == 2)
@@ -7736,9 +7737,9 @@ class ScrollPane extends Component {
             mx = this._vtScrollBar.width;
         const o = this._owner;
         if (this._dontClipMargin)
-            this._maskContainer._uiProps.uiTransformComp.setAnchorPoint((o.margin.left + o._alignOffset.x) / o.width, 1 - (o.margin.top + o._alignOffset.y) / o.height);
+            this._maskContainer.getComponent(UITransform).setAnchorPoint((o.margin.left + o._alignOffset.x) / o.width, 1 - (o.margin.top + o._alignOffset.y) / o.height);
         else
-            this._maskContainer._uiProps.uiTransformComp.setAnchorPoint(o._alignOffset.x / this._viewSize.x, 1 - o._alignOffset.y / this._viewSize.y);
+            this._maskContainer.getComponent(UITransform).setAnchorPoint(o._alignOffset.x / this._viewSize.x, 1 - o._alignOffset.y / this._viewSize.y);
         if (o._customMask)
             this._maskContainer.setPosition(mx + o._alignOffset.x, -o._alignOffset.y);
         else
@@ -8009,7 +8010,7 @@ class ScrollPane extends Component {
         this._isHoldAreaDone = false;
         this._velocity.set(Vec2.ZERO);
         this._velocityScale = 1;
-        this._lastMoveTime = director.getTotalTime() / 1000;
+        this._lastMoveTime = game.totalTime / 1000;
     }
     onTouchMove(evt) {
         if (!isValid(this._owner.node))
@@ -8109,7 +8110,7 @@ class ScrollPane extends Component {
                 this._container.setPosition(newPosX, this._container.position.y);
         }
         //更新速度
-        var now = director.getTotalTime() / 1000;
+        var now = game.totalTime / 1000;
         var deltaTime = Math.max(now - this._lastMoveTime, 1 / 60);
         var deltaPositionX = pt.x - this._lastTouchPos.x;
         var deltaPositionY = pt.y - this._lastTouchPos.y;
@@ -8226,7 +8227,7 @@ class ScrollPane extends Component {
             //更新速度
             if (!this._inertiaDisabled) {
                 var frameRate = 60;
-                var elapsed = (director.getTotalTime() / 1000 - this._lastMoveTime) * frameRate - 1;
+                var elapsed = (game.totalTime / 1000 - this._lastMoveTime) * frameRate - 1;
                 if (elapsed > 1) {
                     var factor = Math.pow(0.833, elapsed);
                     this._velocity.x = this._velocity.x * factor;
@@ -8505,7 +8506,7 @@ class ScrollPane extends Component {
             //以屏幕像素为基准
             var isMobile = sys.isMobile;
             var v2 = Math.abs(v) * this._velocityScale;
-            const winSize = View.instance.getCanvasSize();
+            const winSize = screen.windowSize;
             //在移动设备上，需要对不同分辨率做一个适配，我们的速度判断以1136分辨率为基准
             if (isMobile)
                 v2 *= 1136 / Math.max(winSize.width, winSize.height);
@@ -10027,6 +10028,7 @@ class GComponent extends GObject {
         this._transitions = new Array();
         this._margin = new Margin();
         this._alignOffset = new Vec2();
+        this._maskInverted = false;
         this._container = new Node("Container");
         this._container.layer = UIConfig.defaultUILayer;
         this._container.addComponent(UITransform).setAnchorPoint(0, 1);
@@ -10509,7 +10511,7 @@ class GComponent extends GObject {
             value.node.on(Node.EventType.TRANSFORM_CHANGED, this.onMaskContentChanged, this);
             value.node.on(Node.EventType.SIZE_CHANGED, this.onMaskContentChanged, this);
             value.node.on(Node.EventType.ANCHOR_CHANGED, this.onMaskContentChanged, this);
-            this._customMask.inverted = inverted;
+            this._maskInverted = inverted;
             if (this._node.activeInHierarchy)
                 this.onMaskReady();
             else
@@ -10536,16 +10538,17 @@ class GComponent extends GObject {
     onMaskReady() {
         this.off(Event.DISPLAY, this.onMaskReady, this);
         if (this._maskContent instanceof GImage) {
-            this._customMask.type = Mask.Type.IMAGE_STENCIL;
+            this._customMask.type = Mask.Type.SPRITE_STENCIL;
             this._customMask.alphaThreshold = 0.0001;
-            this._customMask.spriteFrame = this._maskContent._content.spriteFrame;
+            this._customMask.getComponent(Sprite).spriteFrame = this._maskContent._content.spriteFrame;
         }
         else if (this._maskContent instanceof GGraph) {
             if (this._maskContent.type == 2)
-                this._customMask.type = Mask.Type.ELLIPSE;
+                this._customMask.type = Mask.Type.GRAPHICS_ELLIPSE;
             else
-                this._customMask.type = Mask.Type.RECT;
+                this._customMask.type = Mask.Type.GRAPHICS_RECT;
         }
+        this._customMask.inverted = this._maskInverted;
     }
     onMaskContentChanged() {
         let maskNode = this._customMask.node;
@@ -11253,6 +11256,17 @@ class Window extends GComponent {
 }
 
 class GRoot extends GComponent {
+    static get inst() {
+        if (!GRoot._inst)
+            throw 'Call GRoot.create first!';
+        return GRoot._inst;
+    }
+    static create() {
+        GRoot._inst = new GRoot();
+        director.getScene().getChildByName('Canvas').addChild(GRoot._inst.node);
+        GRoot._inst.onWinResize();
+        return GRoot._inst;
+    }
     constructor() {
         super();
         this._node.name = "GRoot";
@@ -11272,17 +11286,6 @@ class GRoot extends GComponent {
             View.instance.on('canvas-resize', this._thisOnResized);
             window.addEventListener('orientationchange', this._thisOnResized);
         }
-    }
-    static get inst() {
-        if (!GRoot._inst)
-            throw 'Call GRoot.create first!';
-        return GRoot._inst;
-    }
-    static create() {
-        GRoot._inst = new GRoot();
-        director.getScene().getChildByName('Canvas').addChild(GRoot._inst.node);
-        GRoot._inst.onWinResize();
-        return GRoot._inst;
     }
     onDestroy() {
         View.instance.off('design-resolution-changed', this.onWinResize, this);
@@ -12459,8 +12462,7 @@ class GLoader3D extends GObject {
             this.setDragonBones(this._contentItem.asset, this._contentItem.atlasAsset, this._contentItem.skeletonAnchor);
     }
     setSpine(asset, anchor, pma) {
-        this.url = null;
-        this.clearContent();
+        this.freeSpine();
         let node = new Node();
         this._container.addChild(node);
         node.layer = UIConfig.defaultUILayer;
@@ -12472,9 +12474,13 @@ class GLoader3D extends GObject {
         this.onChangeSpine();
         this.updateLayout();
     }
+    freeSpine() {
+        if (this._content) {
+            this._content.destroy();
+        }
+    }
     setDragonBones(asset, atlasAsset, anchor, pma) {
-        this.url = null;
-        this.clearContent();
+        this.freeDragonBones();
         let node = new Node();
         node.layer = UIConfig.defaultUILayer;
         this._container.addChild(node);
@@ -12490,9 +12496,20 @@ class GLoader3D extends GObject {
         this.onChangeDragonBones();
         this.updateLayout();
     }
+    freeDragonBones() {
+        if (this._content) {
+            this._content.destroy();
+        }
+    }
     onChange() {
-        this.onChangeSpine();
-        this.onChangeDragonBones();
+        if (this._contentItem == null)
+            return;
+        if (this._contentItem.type == PackageItemType.Spine) {
+            this.onChangeSpine();
+        }
+        if (this._contentItem.type == PackageItemType.DragonBones) {
+            this.onChangeDragonBones();
+        }
     }
     onChangeSpine() {
         if (!(this._content instanceof sp.Skeleton))
@@ -12513,7 +12530,7 @@ class GLoader3D extends GObject {
         else
             this._content.clearTrack(0);
         let skin = this._skinName || this._content.skeletonData.getRuntimeData().skins[0].name;
-        if (this._content["_skeleton"].skin != skin)
+        if (this._content["_skeleton"].skin.name != skin)
             this._content.setSkin(skin);
     }
     onChangeDragonBones() {
@@ -12836,6 +12853,24 @@ class GLabel extends GComponent {
             }
             else
                 buffer.skip(13);
+        }
+        str = buffer.readS();
+        if (str != null) {
+            this._sound = str;
+            if (buffer.readBool()) {
+                this._soundVolumeScale = buffer.readFloat();
+            }
+            this._node.on(Event.CLICK, this.onClick_1, this);
+        }
+    }
+    onClick_1() {
+        if (this._sound) {
+            var pi = UIPackage.getItemByURL(this._sound);
+            if (pi) {
+                var sound = pi.owner.getItemAsset(pi);
+                if (sound)
+                    GRoot.inst.playOneShotSound(sound, this._soundVolumeScale);
+            }
         }
     }
 }
@@ -16963,6 +16998,11 @@ UIObjectFactory.extensions = {};
 Decls.UIObjectFactory = UIObjectFactory;
 
 class DragDropManager {
+    static get inst() {
+        if (!DragDropManager._inst)
+            DragDropManager._inst = new DragDropManager();
+        return DragDropManager._inst;
+    }
     constructor() {
         this._agent = new GLoader();
         this._agent.draggable = true;
@@ -16973,11 +17013,6 @@ class DragDropManager {
         this._agent.verticalAlign = VertAlignType.Middle;
         this._agent.sortingOrder = 1000000;
         this._agent.on(Event.DRAG_END, this.onDragEnd, this);
-    }
-    static get inst() {
-        if (!DragDropManager._inst)
-            DragDropManager._inst = new DragDropManager();
-        return DragDropManager._inst;
     }
     get dragAgent() {
         return this._agent;
@@ -17158,7 +17193,7 @@ class AsyncOperationRunner extends Component {
         var di;
         var poolStart;
         var k;
-        var t = director.getTotalTime() / 1000;
+        var t = game.totalTime / 1000;
         var frameTime = UIConfig.frameTimeForAsyncUIConstruction;
         var totalItems = this._itemList.length;
         while (this._index < totalItems) {
@@ -17188,7 +17223,7 @@ class AsyncOperationRunner extends Component {
                 }
             }
             this._index++;
-            if ((this._index % 5 == 0) && director.getTotalTime() / 1000 - t >= frameTime)
+            if ((this._index % 5 == 0) && game.totalTime / 1000 - t >= frameTime)
                 return;
         }
         var result = this._objectPool[0];

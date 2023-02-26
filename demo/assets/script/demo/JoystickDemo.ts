@@ -1,6 +1,6 @@
 import { _decorator, Component, Node } from 'cc';
 const { ccclass, property } = _decorator;
-import * as fgui from "fairygui-cc";
+import * as fgui from "fairygui-ccc370";
 
 import JoystickModule from "./JoystickModule"
 

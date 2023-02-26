@@ -1,4 +1,4 @@
-import * as fgui from "fairygui-cc";
+import * as fgui from "fairygui-ccc370";
 
 export class TestWin extends fgui.Window {
 

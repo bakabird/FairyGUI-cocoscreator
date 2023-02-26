@@ -12,6 +12,7 @@ export declare class GComponent extends GObject {
     hitArea?: IHitTest;
     private _sortingChildCount;
     private _opaque;
+    private _maskInverted;
     private _applyingController?;
     private _rectMask?;
     private _maskContent?;

@@ -1,4 +1,4 @@
-import { Component, director, isValid, Mask, math, Node, Rect, sys, UITransform, Vec2, View } from "cc";
+import { Component, director, isValid, screen, Mask, math, Node, Rect, sys, UITransform, Vec2, game } from "cc";
 import { Event as FUIEvent } from "./event/Event";
 import { ScrollBarDisplayType, ScrollType } from "./FieldTypes";
 import { Decls, GObject } from "./GObject";
@@ -557,9 +557,9 @@ export class ScrollPane extends Component {
             mx = this._vtScrollBar.width;
         const o = this._owner;
         if (this._dontClipMargin)
-            this._maskContainer._uiProps.uiTransformComp.setAnchorPoint((o.margin.left + o._alignOffset.x) / o.width, 1 - (o.margin.top + o._alignOffset.y) / o.height);
+            this._maskContainer.getComponent(UITransform).setAnchorPoint((o.margin.left + o._alignOffset.x) / o.width, 1 - (o.margin.top + o._alignOffset.y) / o.height);
         else
-            this._maskContainer._uiProps.uiTransformComp.setAnchorPoint(o._alignOffset.x / this._viewSize.x, 1 - o._alignOffset.y / this._viewSize.y);
+            this._maskContainer.getComponent(UITransform).setAnchorPoint(o._alignOffset.x / this._viewSize.x, 1 - o._alignOffset.y / this._viewSize.y);
         if (o._customMask)
             this._maskContainer.setPosition(mx + o._alignOffset.x, -o._alignOffset.y);
         else
@@ -831,7 +831,7 @@ export class ScrollPane extends Component {
         this._velocity.set(Vec2.ZERO);
         ;
         this._velocityScale = 1;
-        this._lastMoveTime = director.getTotalTime() / 1000;
+        this._lastMoveTime = game.totalTime / 1000;
     }
     onTouchMove(evt) {
         if (!isValid(this._owner.node))
@@ -931,7 +931,7 @@ export class ScrollPane extends Component {
                 this._container.setPosition(newPosX, this._container.position.y);
         }
         //更新速度
-        var now = director.getTotalTime() / 1000;
+        var now = game.totalTime / 1000;
         var deltaTime = Math.max(now - this._lastMoveTime, 1 / 60);
         var deltaPositionX = pt.x - this._lastTouchPos.x;
         var deltaPositionY = pt.y - this._lastTouchPos.y;
@@ -1048,7 +1048,7 @@ export class ScrollPane extends Component {
             //更新速度
             if (!this._inertiaDisabled) {
                 var frameRate = 60;
-                var elapsed = (director.getTotalTime() / 1000 - this._lastMoveTime) * frameRate - 1;
+                var elapsed = (game.totalTime / 1000 - this._lastMoveTime) * frameRate - 1;
                 if (elapsed > 1) {
                     var factor = Math.pow(0.833, elapsed);
                     this._velocity.x = this._velocity.x * factor;
@@ -1327,7 +1327,7 @@ export class ScrollPane extends Component {
             //以屏幕像素为基准
             var isMobile = sys.isMobile;
             var v2 = Math.abs(v) * this._velocityScale;
-            const winSize = View.instance.getCanvasSize();
+            const winSize = screen.windowSize;
             //在移动设备上，需要对不同分辨率做一个适配，我们的速度判断以1136分辨率为基准
             if (isMobile)
                 v2 *= 1136 / Math.max(winSize.width, winSize.height);

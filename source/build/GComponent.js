@@ -1,4 +1,4 @@
-import { Mask, Vec2, Node, UITransform } from "cc";
+import { Mask, Vec2, Node, UITransform, Sprite } from "cc";
 import { Controller } from "./Controller";
 import { Event as FUIEvent } from "./event/Event";
 import { PixelHitTest, ChildHitArea } from "./event/HitTest";
@@ -25,6 +25,7 @@ export class GComponent extends GObject {
         this._transitions = new Array();
         this._margin = new Margin();
         this._alignOffset = new Vec2();
+        this._maskInverted = false;
         this._container = new Node("Container");
         this._container.layer = UIConfig.defaultUILayer;
         this._container.addComponent(UITransform).setAnchorPoint(0, 1);
@@ -507,7 +508,7 @@ export class GComponent extends GObject {
             value.node.on(Node.EventType.TRANSFORM_CHANGED, this.onMaskContentChanged, this);
             value.node.on(Node.EventType.SIZE_CHANGED, this.onMaskContentChanged, this);
             value.node.on(Node.EventType.ANCHOR_CHANGED, this.onMaskContentChanged, this);
-            this._customMask.inverted = inverted;
+            this._maskInverted = inverted;
             if (this._node.activeInHierarchy)
                 this.onMaskReady();
             else
@@ -534,16 +535,17 @@ export class GComponent extends GObject {
     onMaskReady() {
         this.off(FUIEvent.DISPLAY, this.onMaskReady, this);
         if (this._maskContent instanceof GImage) {
-            this._customMask.type = Mask.Type.IMAGE_STENCIL;
+            this._customMask.type = Mask.Type.SPRITE_STENCIL;
             this._customMask.alphaThreshold = 0.0001;
-            this._customMask.spriteFrame = this._maskContent._content.spriteFrame;
+            this._customMask.getComponent(Sprite).spriteFrame = this._maskContent._content.spriteFrame;
         }
         else if (this._maskContent instanceof GGraph) {
             if (this._maskContent.type == 2)
-                this._customMask.type = Mask.Type.ELLIPSE;
+                this._customMask.type = Mask.Type.GRAPHICS_ELLIPSE;
             else
-                this._customMask.type = Mask.Type.RECT;
+                this._customMask.type = Mask.Type.GRAPHICS_RECT;
         }
+        this._customMask.inverted = this._maskInverted;
     }
     onMaskContentChanged() {
         let maskNode = this._customMask.node;

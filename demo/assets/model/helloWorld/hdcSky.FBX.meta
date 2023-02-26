@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.12",
+  "ver": "2.3.2",
   "importer": "fbx",
   "imported": true,
   "uuid": "929e58ce-66a4-4e04-9036-4244456a1220",
@@ -31,8 +31,8 @@
       "ver": "1.0.3",
       "imported": true,
       "files": [
-        ".png",
-        ".json"
+        ".json",
+        ".png"
       ],
       "subMetas": {},
       "userData": {
@@ -45,7 +45,7 @@
       "displayName": "",
       "id": "d6067",
       "name": "hdcSky.texture",
-      "ver": "1.0.21",
+      "ver": "1.0.22",
       "imported": true,
       "files": [
         ".json"
@@ -105,6 +105,9 @@
     },
     "dumpMaterials": true,
     "materialDumpDir": "db://assets/material",
-    "legacyFbxImporter": true
+    "legacyFbxImporter": true,
+    "fbx": {
+      "smartMaterialEnabled": false
+    }
   }
 }

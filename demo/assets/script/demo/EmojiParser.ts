@@ -1,4 +1,4 @@
-import * as fgui from "fairygui-cc";
+import * as fgui from "fairygui-ccc370";
 
 export default class EmojiParser extends fgui.UBBParser {
     private static TAGS: Array<string> = ["88", "am", "bs", "bz", "ch", "cool", "dhq", "dn", "fd", "gz", "han", "hx", "hxiao", "hxiu"];
