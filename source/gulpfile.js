@@ -23,7 +23,7 @@ gulp.task("rollup", async function () {
         input: "build/FairyGUI.js",
         external: ['cc', 'cc/env'],
         output: {
-            file: 'dist/fairygui.mjs',
+            file: 'dist/fairygui-ccc370.mjs',
             format: 'esm',
             extend: true,
             name: 'fgui',
@@ -34,7 +34,7 @@ gulp.task("rollup", async function () {
 });
 
 gulp.task("uglify", function () {
-    return gulp.src("dist/fairygui.mjs")
+    return gulp.src("dist/fairygui-ccc370.mjs")
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify(/* options */))
         .pipe(gulp.dest("dist/"));
@@ -42,7 +42,7 @@ gulp.task("uglify", function () {
 
 gulp.task('buildDts', function () {
     return new Promise(function (resolve, reject) {
-        dts.bundle({ name: "fairygui-cc", main: "./build/FairyGUI.d.ts", out: "../dist/fairygui.d.ts" });
+        dts.bundle({ name: "fairygui-ccc370", main: "./build/FairyGUI.d.ts", out: "../dist/fairygui-ccc370.d.ts" });
         resolve();
     });
 })

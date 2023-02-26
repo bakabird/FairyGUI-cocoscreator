@@ -2,68 +2,68 @@
 // Dependencies for this module:
 //   ../cc
 
-declare module 'fairygui-cc' {
-    export { GGroup } from "fairygui-cc/GGroup";
-    export { GObject } from "fairygui-cc/GObject";
-    export { GGraph } from "fairygui-cc/GGraph";
-    export { GImage } from "fairygui-cc/GImage";
-    export { GMovieClip } from "fairygui-cc/GMovieClip";
-    export { GRoot } from "fairygui-cc/GRoot";
-    export { GTextField } from "fairygui-cc/GTextField";
-    export { GRichTextField } from "fairygui-cc/GRichTextField";
-    export { GTextInput } from "fairygui-cc/GTextInput";
-    export { GLoader } from "fairygui-cc/GLoader";
-    export { GLoader3D } from "fairygui-cc/GLoader3D";
-    export { GComponent } from "fairygui-cc/GComponent";
-    export { GLabel } from "fairygui-cc/GLabel";
-    export { GButton } from "fairygui-cc/GButton";
-    export { GComboBox } from "fairygui-cc/GComboBox";
-    export { GSlider } from "fairygui-cc/GSlider";
-    export { GProgressBar } from "fairygui-cc/GProgressBar";
-    export { GScrollBar } from "fairygui-cc/GScrollBar";
-    export { GList, ListItemRenderer } from "fairygui-cc/GList";
-    export { GTree } from "fairygui-cc/GTree";
-    export { GTreeNode } from "fairygui-cc/GTreeNode";
-    export { Window } from "fairygui-cc/Window";
-    export { PopupMenu } from "fairygui-cc/PopupMenu";
-    export { Controller } from "fairygui-cc/Controller";
-    export { Transition } from "fairygui-cc/Transition";
-    export { ScrollPane } from "fairygui-cc/ScrollPane";
-    export { RelationType } from "fairygui-cc/FieldTypes";
-    export { UIPackage } from "fairygui-cc/UIPackage";
-    export { PackageItem } from "fairygui-cc/PackageItem";
-    export { GObjectPool } from "fairygui-cc/GObjectPool";
-    export { UIObjectFactory } from "fairygui-cc/UIObjectFactory";
-    export { UIConfig, registerFont } from "fairygui-cc/UIConfig";
-    export { DragDropManager } from "fairygui-cc/DragDropManager";
-    export { AsyncOperation } from "fairygui-cc/AsyncOperation";
-    export { TranslationHelper } from "fairygui-cc/TranslationHelper";
-    export { GearAnimation } from "fairygui-cc/gears/GearAnimation";
-    export { GearBase } from "fairygui-cc/gears/GearBase";
-    export { GearColor } from "fairygui-cc/gears/GearColor";
-    export { GearDisplay } from "fairygui-cc/gears/GearDisplay";
-    export { GearDisplay2 } from "fairygui-cc/gears/GearDisplay2";
-    export { GearFontSize } from "fairygui-cc/gears/GearFontSize";
-    export { GearIcon } from "fairygui-cc/gears/GearIcon";
-    export { GearLook } from "fairygui-cc/gears/GearLook";
-    export { GearSize } from "fairygui-cc/gears/GearSize";
-    export { GearText } from "fairygui-cc/gears/GearText";
-    export { GearXY } from "fairygui-cc/gears/GearXY";
-    export * from "fairygui-cc/FieldTypes";
-    export { BlendMode } from "fairygui-cc/display/BlendMode";
-    export { Image } from "fairygui-cc/display/Image";
-    export { MovieClip, Frame } from "fairygui-cc/display/MovieClip";
-    export { Event } from "fairygui-cc/event/Event";
-    export { GTween } from "fairygui-cc/tween/GTween";
-    export { GTweener } from "fairygui-cc/tween/GTweener";
-    export { EaseType } from "fairygui-cc/tween/EaseType";
-    export { UBBParser } from "fairygui-cc/utils/UBBParser";
-    export { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+declare module 'fairygui-ccc370' {
+    export { GGroup } from "fairygui-ccc370/GGroup";
+    export { GObject } from "fairygui-ccc370/GObject";
+    export { GGraph } from "fairygui-ccc370/GGraph";
+    export { GImage } from "fairygui-ccc370/GImage";
+    export { GMovieClip } from "fairygui-ccc370/GMovieClip";
+    export { GRoot } from "fairygui-ccc370/GRoot";
+    export { GTextField } from "fairygui-ccc370/GTextField";
+    export { GRichTextField } from "fairygui-ccc370/GRichTextField";
+    export { GTextInput } from "fairygui-ccc370/GTextInput";
+    export { GLoader } from "fairygui-ccc370/GLoader";
+    export { GLoader3D } from "fairygui-ccc370/GLoader3D";
+    export { GComponent } from "fairygui-ccc370/GComponent";
+    export { GLabel } from "fairygui-ccc370/GLabel";
+    export { GButton } from "fairygui-ccc370/GButton";
+    export { GComboBox } from "fairygui-ccc370/GComboBox";
+    export { GSlider } from "fairygui-ccc370/GSlider";
+    export { GProgressBar } from "fairygui-ccc370/GProgressBar";
+    export { GScrollBar } from "fairygui-ccc370/GScrollBar";
+    export { GList, ListItemRenderer } from "fairygui-ccc370/GList";
+    export { GTree } from "fairygui-ccc370/GTree";
+    export { GTreeNode } from "fairygui-ccc370/GTreeNode";
+    export { Window } from "fairygui-ccc370/Window";
+    export { PopupMenu } from "fairygui-ccc370/PopupMenu";
+    export { Controller } from "fairygui-ccc370/Controller";
+    export { Transition } from "fairygui-ccc370/Transition";
+    export { ScrollPane } from "fairygui-ccc370/ScrollPane";
+    export { RelationType } from "fairygui-ccc370/FieldTypes";
+    export { UIPackage } from "fairygui-ccc370/UIPackage";
+    export { PackageItem } from "fairygui-ccc370/PackageItem";
+    export { GObjectPool } from "fairygui-ccc370/GObjectPool";
+    export { UIObjectFactory } from "fairygui-ccc370/UIObjectFactory";
+    export { UIConfig, registerFont } from "fairygui-ccc370/UIConfig";
+    export { DragDropManager } from "fairygui-ccc370/DragDropManager";
+    export { AsyncOperation } from "fairygui-ccc370/AsyncOperation";
+    export { TranslationHelper } from "fairygui-ccc370/TranslationHelper";
+    export { GearAnimation } from "fairygui-ccc370/gears/GearAnimation";
+    export { GearBase } from "fairygui-ccc370/gears/GearBase";
+    export { GearColor } from "fairygui-ccc370/gears/GearColor";
+    export { GearDisplay } from "fairygui-ccc370/gears/GearDisplay";
+    export { GearDisplay2 } from "fairygui-ccc370/gears/GearDisplay2";
+    export { GearFontSize } from "fairygui-ccc370/gears/GearFontSize";
+    export { GearIcon } from "fairygui-ccc370/gears/GearIcon";
+    export { GearLook } from "fairygui-ccc370/gears/GearLook";
+    export { GearSize } from "fairygui-ccc370/gears/GearSize";
+    export { GearText } from "fairygui-ccc370/gears/GearText";
+    export { GearXY } from "fairygui-ccc370/gears/GearXY";
+    export * from "fairygui-ccc370/FieldTypes";
+    export { BlendMode } from "fairygui-ccc370/display/BlendMode";
+    export { Image } from "fairygui-ccc370/display/Image";
+    export { MovieClip, Frame } from "fairygui-ccc370/display/MovieClip";
+    export { Event } from "fairygui-ccc370/event/Event";
+    export { GTween } from "fairygui-ccc370/tween/GTween";
+    export { GTweener } from "fairygui-ccc370/tween/GTweener";
+    export { EaseType } from "fairygui-ccc370/tween/EaseType";
+    export { UBBParser } from "fairygui-ccc370/utils/UBBParser";
+    export { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
 }
 
-declare module 'fairygui-cc/GGroup' {
-    import { GObject } from "fairygui-cc/GObject";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+declare module 'fairygui-ccc370/GGroup' {
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GGroup extends GObject {
         _updating: number;
         constructor();
@@ -94,20 +94,20 @@ declare module 'fairygui-cc/GGroup' {
     }
 }
 
-declare module 'fairygui-cc/GObject' {
+declare module 'fairygui-ccc370/GObject' {
     import { Vec2, Rect, Component, Node, UITransform, UIOpacity } from "cc";
-    import { Controller } from "fairygui-cc/Controller";
-    import { BlendMode } from "fairygui-cc/display/BlendMode";
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GearBase } from "fairygui-cc/gears/GearBase";
-    import { GearLook } from "fairygui-cc/gears/GearLook";
-    import { GearSize } from "fairygui-cc/gears/GearSize";
-    import { GearXY } from "fairygui-cc/gears/GearXY";
-    import { GGroup } from "fairygui-cc/GGroup";
-    import { GTreeNode } from "fairygui-cc/GTreeNode";
-    import { PackageItem } from "fairygui-cc/PackageItem";
-    import { Relations } from "fairygui-cc/Relations";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { Controller } from "fairygui-ccc370/Controller";
+    import { BlendMode } from "fairygui-ccc370/display/BlendMode";
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GearBase } from "fairygui-ccc370/gears/GearBase";
+    import { GearLook } from "fairygui-ccc370/gears/GearLook";
+    import { GearSize } from "fairygui-ccc370/gears/GearSize";
+    import { GearXY } from "fairygui-ccc370/gears/GearXY";
+    import { GGroup } from "fairygui-ccc370/GGroup";
+    import { GTreeNode } from "fairygui-ccc370/GTreeNode";
+    import { PackageItem } from "fairygui-ccc370/PackageItem";
+    import { Relations } from "fairygui-ccc370/Relations";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GObject {
         data?: any;
         packageItem?: PackageItem;
@@ -302,10 +302,10 @@ declare module 'fairygui-cc/GObject' {
     };
 }
 
-declare module 'fairygui-cc/GGraph' {
+declare module 'fairygui-ccc370/GGraph' {
     import { Color, Graphics, Vec2 } from "cc";
-    import { GObject } from "fairygui-cc/GObject";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GGraph extends GObject {
         _content: Graphics;
         constructor();
@@ -328,12 +328,12 @@ declare module 'fairygui-cc/GGraph' {
     }
 }
 
-declare module 'fairygui-cc/GImage' {
+declare module 'fairygui-ccc370/GImage' {
     import { Color } from "cc";
-    import { Image } from "fairygui-cc/display/Image";
-    import { FlipType, FillMethod, FillOrigin } from "fairygui-cc/FieldTypes";
-    import { GObject } from "fairygui-cc/GObject";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { Image } from "fairygui-ccc370/display/Image";
+    import { FlipType, FillMethod, FillOrigin } from "fairygui-ccc370/FieldTypes";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GImage extends GObject {
         _content: Image;
         constructor();
@@ -357,11 +357,11 @@ declare module 'fairygui-cc/GImage' {
     }
 }
 
-declare module 'fairygui-cc/GMovieClip' {
+declare module 'fairygui-ccc370/GMovieClip' {
     import { Color } from "cc";
-    import { MovieClip } from "fairygui-cc/display/MovieClip";
-    import { GObject } from "fairygui-cc/GObject";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { MovieClip } from "fairygui-ccc370/display/MovieClip";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GMovieClip extends GObject {
         _content: MovieClip;
         constructor();
@@ -386,14 +386,14 @@ declare module 'fairygui-cc/GMovieClip' {
     }
 }
 
-declare module 'fairygui-cc/GRoot' {
+declare module 'fairygui-ccc370/GRoot' {
     import { Vec2, AudioClip } from "cc";
-    import { InputProcessor } from "fairygui-cc/event/InputProcessor";
-    import { PopupDirection } from "fairygui-cc/FieldTypes";
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GGraph } from "fairygui-cc/GGraph";
-    import { GObject } from "fairygui-cc/GObject";
-    import { Window } from "fairygui-cc/Window";
+    import { InputProcessor } from "fairygui-ccc370/event/InputProcessor";
+    import { PopupDirection } from "fairygui-ccc370/FieldTypes";
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GGraph } from "fairygui-ccc370/GGraph";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { Window } from "fairygui-ccc370/Window";
     export class GRoot extends GComponent {
         static get inst(): GRoot;
         static create(): GRoot;
@@ -430,11 +430,11 @@ declare module 'fairygui-cc/GRoot' {
     }
 }
 
-declare module 'fairygui-cc/GTextField' {
+declare module 'fairygui-ccc370/GTextField' {
     import { Color, Font, HorizontalTextAlignment, Label, LabelOutline, LabelShadow, Vec2, VerticalTextAlignment } from "cc";
-    import { AutoSizeType } from "fairygui-cc/FieldTypes";
-    import { GObject } from "fairygui-cc/GObject";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { AutoSizeType } from "fairygui-ccc370/FieldTypes";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GTextField extends GObject {
         _label: Label;
         protected _font: string;
@@ -524,9 +524,9 @@ declare module 'fairygui-cc/GTextField' {
     }
 }
 
-declare module 'fairygui-cc/GRichTextField' {
+declare module 'fairygui-ccc370/GRichTextField' {
     import { HorizontalTextAlignment, RichText, SpriteAtlas, SpriteFrame } from "cc";
-    import { GTextField } from "fairygui-cc/GTextField";
+    import { GTextField } from "fairygui-ccc370/GTextField";
     export class RichTextImageAtlas extends SpriteAtlas {
         getSpriteFrame(key: string): SpriteFrame;
     }
@@ -554,10 +554,10 @@ declare module 'fairygui-cc/GRichTextField' {
     }
 }
 
-declare module 'fairygui-cc/GTextInput' {
+declare module 'fairygui-ccc370/GTextInput' {
     import { EditBox, HorizontalTextAlignment, VerticalTextAlignment } from "cc";
-    import { GTextField } from "fairygui-cc/GTextField";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { GTextField } from "fairygui-ccc370/GTextField";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GTextInput extends GTextField {
         _editBox: EditBox;
         constructor();
@@ -589,13 +589,13 @@ declare module 'fairygui-cc/GTextInput' {
     }
 }
 
-declare module 'fairygui-cc/GLoader' {
+declare module 'fairygui-ccc370/GLoader' {
     import { Color, SpriteFrame, Vec2 } from "cc";
-    import { MovieClip } from "fairygui-cc/display/MovieClip";
-    import { AlignType, VertAlignType, LoaderFillType, FillMethod, FillOrigin } from "fairygui-cc/FieldTypes";
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GObject } from "fairygui-cc/GObject";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { MovieClip } from "fairygui-ccc370/display/MovieClip";
+    import { AlignType, VertAlignType, LoaderFillType, FillMethod, FillOrigin } from "fairygui-ccc370/FieldTypes";
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GLoader extends GObject {
         _content: MovieClip;
         constructor();
@@ -649,11 +649,11 @@ declare module 'fairygui-cc/GLoader' {
     }
 }
 
-declare module 'fairygui-cc/GLoader3D' {
+declare module 'fairygui-ccc370/GLoader3D' {
     import { sp, dragonBones, Color, Vec2 } from "cc";
-    import { AlignType, LoaderFillType, VertAlignType } from "fairygui-cc/FieldTypes";
-    import { GObject } from "fairygui-cc/GObject";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { AlignType, LoaderFillType, VertAlignType } from "fairygui-ccc370/FieldTypes";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GLoader3D extends GObject {
         constructor();
         dispose(): void;
@@ -700,17 +700,17 @@ declare module 'fairygui-cc/GLoader3D' {
     }
 }
 
-declare module 'fairygui-cc/GComponent' {
+declare module 'fairygui-ccc370/GComponent' {
     import { Mask, Vec2, Node, Constructor } from "cc";
-    import { Controller } from "fairygui-cc/Controller";
-    import { IHitTest } from "fairygui-cc/event/HitTest";
-    import { ChildrenRenderOrder, OverflowType } from "fairygui-cc/FieldTypes";
-    import { GGroup } from "fairygui-cc/GGroup";
-    import { GObject } from "fairygui-cc/GObject";
-    import { Margin } from "fairygui-cc/Margin";
-    import { ScrollPane } from "fairygui-cc/ScrollPane";
-    import { Transition } from "fairygui-cc/Transition";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { Controller } from "fairygui-ccc370/Controller";
+    import { IHitTest } from "fairygui-ccc370/event/HitTest";
+    import { ChildrenRenderOrder, OverflowType } from "fairygui-ccc370/FieldTypes";
+    import { GGroup } from "fairygui-ccc370/GGroup";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { Margin } from "fairygui-ccc370/Margin";
+    import { ScrollPane } from "fairygui-ccc370/ScrollPane";
+    import { Transition } from "fairygui-ccc370/Transition";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GComponent extends GObject {
         hitArea?: IHitTest;
         protected _margin: Margin;
@@ -801,12 +801,12 @@ declare module 'fairygui-cc/GComponent' {
     }
 }
 
-declare module 'fairygui-cc/GLabel' {
+declare module 'fairygui-ccc370/GLabel' {
     import { Color } from "cc";
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GObject } from "fairygui-cc/GObject";
-    import { GTextField } from "fairygui-cc/GTextField";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { GTextField } from "fairygui-ccc370/GTextField";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GLabel extends GComponent {
         protected _titleObject: GObject;
         protected _iconObject: GObject;
@@ -831,14 +831,14 @@ declare module 'fairygui-cc/GLabel' {
     }
 }
 
-declare module 'fairygui-cc/GButton' {
+declare module 'fairygui-ccc370/GButton' {
     import { Color } from "cc";
-    import { Controller } from "fairygui-cc/Controller";
-    import { ButtonMode } from "fairygui-cc/FieldTypes";
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GObject } from "fairygui-cc/GObject";
-    import { GTextField } from "fairygui-cc/GTextField";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { Controller } from "fairygui-ccc370/Controller";
+    import { ButtonMode } from "fairygui-ccc370/FieldTypes";
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { GTextField } from "fairygui-ccc370/GTextField";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GButton extends GComponent {
         protected _titleObject: GObject;
         protected _iconObject: GObject;
@@ -892,15 +892,15 @@ declare module 'fairygui-cc/GButton' {
     }
 }
 
-declare module 'fairygui-cc/GComboBox' {
+declare module 'fairygui-ccc370/GComboBox' {
     import { Color } from "cc";
-    import { Controller } from "fairygui-cc/Controller";
-    import { PopupDirection } from "fairygui-cc/FieldTypes";
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GList } from "fairygui-cc/GList";
-    import { GObject } from "fairygui-cc/GObject";
-    import { GTextField } from "fairygui-cc/GTextField";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { Controller } from "fairygui-ccc370/Controller";
+    import { PopupDirection } from "fairygui-ccc370/FieldTypes";
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GList } from "fairygui-ccc370/GList";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { GTextField } from "fairygui-ccc370/GTextField";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GComboBox extends GComponent {
         dropdown: GComponent;
         protected _titleObject: GObject;
@@ -943,10 +943,10 @@ declare module 'fairygui-cc/GComboBox' {
     }
 }
 
-declare module 'fairygui-cc/GSlider' {
-    import { ProgressTitleType } from "fairygui-cc/FieldTypes";
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+declare module 'fairygui-ccc370/GSlider' {
+    import { ProgressTitleType } from "fairygui-ccc370/FieldTypes";
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GSlider extends GComponent {
         changeOnClick: boolean;
         canDrag: boolean;
@@ -968,11 +968,11 @@ declare module 'fairygui-cc/GSlider' {
     }
 }
 
-declare module 'fairygui-cc/GProgressBar' {
-    import { ProgressTitleType } from "fairygui-cc/FieldTypes";
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GTweener } from "fairygui-cc/tween/GTweener";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+declare module 'fairygui-ccc370/GProgressBar' {
+    import { ProgressTitleType } from "fairygui-ccc370/FieldTypes";
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GTweener } from "fairygui-ccc370/tween/GTweener";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GProgressBar extends GComponent {
         constructor();
         get titleType(): ProgressTitleType;
@@ -991,10 +991,10 @@ declare module 'fairygui-cc/GProgressBar' {
     }
 }
 
-declare module 'fairygui-cc/GScrollBar' {
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { ScrollPane } from "fairygui-cc/ScrollPane";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+declare module 'fairygui-ccc370/GScrollBar' {
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { ScrollPane } from "fairygui-ccc370/ScrollPane";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GScrollBar extends GComponent {
         constructor();
         setScrollPane(target: ScrollPane, vertical: boolean): void;
@@ -1006,15 +1006,15 @@ declare module 'fairygui-cc/GScrollBar' {
     }
 }
 
-declare module 'fairygui-cc/GList' {
+declare module 'fairygui-ccc370/GList' {
     import { Size, Vec2 } from "cc";
-    import { Controller } from "fairygui-cc/Controller";
-    import { Event as FUIEvent } from "fairygui-cc/event/Event";
-    import { ListLayoutType, ListSelectionMode, AlignType, VertAlignType } from "fairygui-cc/FieldTypes";
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GObject } from "fairygui-cc/GObject";
-    import { GObjectPool } from "fairygui-cc/GObjectPool";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { Controller } from "fairygui-ccc370/Controller";
+    import { Event as FUIEvent } from "fairygui-ccc370/event/Event";
+    import { ListLayoutType, ListSelectionMode, AlignType, VertAlignType } from "fairygui-ccc370/FieldTypes";
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { GObjectPool } from "fairygui-ccc370/GObjectPool";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export type ListItemRenderer = (index: number, item: GObject) => void;
     export class GList extends GComponent {
         itemRenderer: ListItemRenderer;
@@ -1090,13 +1090,13 @@ declare module 'fairygui-cc/GList' {
     }
 }
 
-declare module 'fairygui-cc/GTree' {
-    import { Event as FUIEvent } from "fairygui-cc/event/Event";
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GList } from "fairygui-cc/GList";
-    import { GObject } from "fairygui-cc/GObject";
-    import { GTreeNode } from "fairygui-cc/GTreeNode";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+declare module 'fairygui-ccc370/GTree' {
+    import { Event as FUIEvent } from "fairygui-ccc370/event/Event";
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GList } from "fairygui-ccc370/GList";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { GTreeNode } from "fairygui-ccc370/GTreeNode";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GTree extends GList {
         treeNodeRender: (node: GTreeNode, obj: GComponent) => void;
         treeNodeWillExpand: (node: GTreeNode, expanded: boolean) => void;
@@ -1123,9 +1123,9 @@ declare module 'fairygui-cc/GTree' {
     }
 }
 
-declare module 'fairygui-cc/GTreeNode' {
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GTree } from "fairygui-cc/GTree";
+declare module 'fairygui-ccc370/GTreeNode' {
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GTree } from "fairygui-ccc370/GTree";
     export class GTreeNode {
         data?: any;
         _cell: GComponent;
@@ -1161,10 +1161,10 @@ declare module 'fairygui-cc/GTreeNode' {
     }
 }
 
-declare module 'fairygui-cc/Window' {
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GObject } from "fairygui-cc/GObject";
-    import { GRoot } from "fairygui-cc/GRoot";
+declare module 'fairygui-ccc370/Window' {
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { GRoot } from "fairygui-ccc370/GRoot";
     export interface IUISource {
         fileName: string;
         loaded: boolean;
@@ -1212,12 +1212,12 @@ declare module 'fairygui-cc/Window' {
     }
 }
 
-declare module 'fairygui-cc/PopupMenu' {
-    import { PopupDirection } from "fairygui-cc/FieldTypes";
-    import { GButton } from "fairygui-cc/GButton";
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GList } from "fairygui-cc/GList";
-    import { GObject } from "fairygui-cc/GObject";
+declare module 'fairygui-ccc370/PopupMenu' {
+    import { PopupDirection } from "fairygui-ccc370/FieldTypes";
+    import { GButton } from "fairygui-ccc370/GButton";
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GList } from "fairygui-ccc370/GList";
+    import { GObject } from "fairygui-ccc370/GObject";
     export class PopupMenu {
         protected _contentPane: GComponent;
         protected _list: GList;
@@ -1242,8 +1242,8 @@ declare module 'fairygui-cc/PopupMenu' {
     }
 }
 
-declare module 'fairygui-cc/Controller' {
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+declare module 'fairygui-ccc370/Controller' {
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class Controller extends EventTarget {
         name: string;
         parent: GComponent;
@@ -1281,13 +1281,13 @@ declare module 'fairygui-cc/Controller' {
         setup(buffer: ByteBuffer): void;
     }
     import { EventTarget } from "cc";
-    import { GComponent } from "fairygui-cc/GComponent";
+    import { GComponent } from "fairygui-ccc370/GComponent";
 }
 
-declare module 'fairygui-cc/Transition' {
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GObject } from "fairygui-cc/GObject";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+declare module 'fairygui-ccc370/Transition' {
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class Transition {
         name: string;
         constructor(owner: GComponent);
@@ -1314,13 +1314,13 @@ declare module 'fairygui-cc/Transition' {
     }
 }
 
-declare module 'fairygui-cc/ScrollPane' {
+declare module 'fairygui-ccc370/ScrollPane' {
     import { Component, Vec2 } from "cc";
-    import { Controller } from "fairygui-cc/Controller";
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GObject } from "fairygui-cc/GObject";
-    import { GScrollBar } from "fairygui-cc/GScrollBar";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { Controller } from "fairygui-ccc370/Controller";
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { GScrollBar } from "fairygui-ccc370/GScrollBar";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class ScrollPane extends Component {
         _displayInDemand?: boolean;
         _loop: number;
@@ -1400,7 +1400,7 @@ declare module 'fairygui-cc/ScrollPane' {
     }
 }
 
-declare module 'fairygui-cc/FieldTypes' {
+declare module 'fairygui-ccc370/FieldTypes' {
     export enum ButtonMode {
         Common = 0,
         Check = 1,
@@ -1575,10 +1575,10 @@ declare module 'fairygui-cc/FieldTypes' {
     }
 }
 
-declare module 'fairygui-cc/UIPackage' {
+declare module 'fairygui-ccc370/UIPackage' {
     import { Asset, AssetManager } from "cc";
-    import { GObject } from "fairygui-cc/GObject";
-    import { PackageItem } from "fairygui-cc/PackageItem";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { PackageItem } from "fairygui-ccc370/PackageItem";
     type PackageDependency = {
             id: string;
             name: string;
@@ -1656,13 +1656,13 @@ declare module 'fairygui-cc/UIPackage' {
     export {};
 }
 
-declare module 'fairygui-cc/PackageItem' {
+declare module 'fairygui-ccc370/PackageItem' {
     import { Asset, dragonBones, Rect, Vec2 } from "cc";
-    import { Frame } from "fairygui-cc/display/MovieClip";
-    import { PixelHitTestData } from "fairygui-cc/event/HitTest";
-    import { PackageItemType, ObjectType } from "fairygui-cc/FieldTypes";
-    import { UIPackage } from "fairygui-cc/UIPackage";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { Frame } from "fairygui-ccc370/display/MovieClip";
+    import { PixelHitTestData } from "fairygui-ccc370/event/HitTest";
+    import { PackageItemType, ObjectType } from "fairygui-ccc370/FieldTypes";
+    import { UIPackage } from "fairygui-ccc370/UIPackage";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class PackageItem {
         owner: UIPackage;
         type: PackageItemType;
@@ -1698,8 +1698,8 @@ declare module 'fairygui-cc/PackageItem' {
     }
 }
 
-declare module 'fairygui-cc/GObjectPool' {
-    import { GObject } from "fairygui-cc/GObject";
+declare module 'fairygui-ccc370/GObjectPool' {
+    import { GObject } from "fairygui-ccc370/GObject";
     export class GObjectPool {
         constructor();
         clear(): void;
@@ -1709,11 +1709,11 @@ declare module 'fairygui-cc/GObjectPool' {
     }
 }
 
-declare module 'fairygui-cc/UIObjectFactory' {
-    import { GComponent } from "fairygui-cc/GComponent";
-    import { GLoader } from "fairygui-cc/GLoader";
-    import { GObject } from "fairygui-cc/GObject";
-    import { PackageItem } from "fairygui-cc/PackageItem";
+declare module 'fairygui-ccc370/UIObjectFactory' {
+    import { GComponent } from "fairygui-ccc370/GComponent";
+    import { GLoader } from "fairygui-ccc370/GLoader";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { PackageItem } from "fairygui-ccc370/PackageItem";
     export class UIObjectFactory {
         static counter: number;
         static extensions: {
@@ -1728,7 +1728,7 @@ declare module 'fairygui-cc/UIObjectFactory' {
     }
 }
 
-declare module 'fairygui-cc/UIConfig' {
+declare module 'fairygui-ccc370/UIConfig' {
     import { AssetManager, Color, Font } from "cc";
     export class UIConfig {
         constructor();
@@ -1762,8 +1762,8 @@ declare module 'fairygui-cc/UIConfig' {
     export function getFontByName(name: string): Font;
 }
 
-declare module 'fairygui-cc/DragDropManager' {
-    import { GObject } from "fairygui-cc/GObject";
+declare module 'fairygui-ccc370/DragDropManager' {
+    import { GObject } from "fairygui-ccc370/GObject";
     export class DragDropManager {
         static get inst(): DragDropManager;
         constructor();
@@ -1774,8 +1774,8 @@ declare module 'fairygui-cc/DragDropManager' {
     }
 }
 
-declare module 'fairygui-cc/AsyncOperation' {
-    import { GObject } from "fairygui-cc/GObject";
+declare module 'fairygui-ccc370/AsyncOperation' {
+    import { GObject } from "fairygui-ccc370/GObject";
     export class AsyncOperation {
         callback: (obj: GObject) => void;
         createObject(pkgName: string, resName: string): void;
@@ -1784,8 +1784,8 @@ declare module 'fairygui-cc/AsyncOperation' {
     }
 }
 
-declare module 'fairygui-cc/TranslationHelper' {
-    import { PackageItem } from "fairygui-cc/PackageItem";
+declare module 'fairygui-ccc370/TranslationHelper' {
+    import { PackageItem } from "fairygui-ccc370/PackageItem";
     export class TranslationHelper {
         static strings: {
             [index: string]: {
@@ -1797,9 +1797,9 @@ declare module 'fairygui-cc/TranslationHelper' {
     }
 }
 
-declare module 'fairygui-cc/gears/GearAnimation' {
-    import { GearBase } from "fairygui-cc/gears/GearBase";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+declare module 'fairygui-ccc370/gears/GearAnimation' {
+    import { GearBase } from "fairygui-ccc370/gears/GearBase";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GearAnimation extends GearBase {
         protected init(): void;
         protected addStatus(pageId: string, buffer: ByteBuffer): void;
@@ -1808,11 +1808,11 @@ declare module 'fairygui-cc/gears/GearAnimation' {
     }
 }
 
-declare module 'fairygui-cc/gears/GearBase' {
-    import { Controller } from "fairygui-cc/Controller";
-    import { GObject } from "fairygui-cc/GObject";
-    import { GTweener } from "fairygui-cc/tween/GTweener";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+declare module 'fairygui-ccc370/gears/GearBase' {
+    import { Controller } from "fairygui-ccc370/Controller";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { GTweener } from "fairygui-ccc370/tween/GTweener";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GearBase {
         static disableAllTweenEffect?: boolean;
         _owner: GObject;
@@ -1843,9 +1843,9 @@ declare module 'fairygui-cc/gears/GearBase' {
     }
 }
 
-declare module 'fairygui-cc/gears/GearColor' {
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
-    import { GearBase } from "fairygui-cc/gears/GearBase";
+declare module 'fairygui-ccc370/gears/GearColor' {
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
+    import { GearBase } from "fairygui-ccc370/gears/GearBase";
     export class GearColor extends GearBase {
         protected init(): void;
         protected addStatus(pageId: string, buffer: ByteBuffer): void;
@@ -1854,8 +1854,8 @@ declare module 'fairygui-cc/gears/GearColor' {
     }
 }
 
-declare module 'fairygui-cc/gears/GearDisplay' {
-    import { GearBase } from "fairygui-cc/gears/GearBase";
+declare module 'fairygui-ccc370/gears/GearDisplay' {
+    import { GearBase } from "fairygui-ccc370/gears/GearBase";
     export class GearDisplay extends GearBase {
         pages: string[];
         protected init(): void;
@@ -1866,8 +1866,8 @@ declare module 'fairygui-cc/gears/GearDisplay' {
     }
 }
 
-declare module 'fairygui-cc/gears/GearDisplay2' {
-    import { GearBase } from "fairygui-cc/gears/GearBase";
+declare module 'fairygui-ccc370/gears/GearDisplay2' {
+    import { GearBase } from "fairygui-ccc370/gears/GearBase";
     export class GearDisplay2 extends GearBase {
         pages: string[];
         condition: number;
@@ -1877,9 +1877,9 @@ declare module 'fairygui-cc/gears/GearDisplay2' {
     }
 }
 
-declare module 'fairygui-cc/gears/GearFontSize' {
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
-    import { GearBase } from "fairygui-cc/gears/GearBase";
+declare module 'fairygui-ccc370/gears/GearFontSize' {
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
+    import { GearBase } from "fairygui-ccc370/gears/GearBase";
     export class GearFontSize extends GearBase {
         protected init(): void;
         protected addStatus(pageId: string, buffer: ByteBuffer): void;
@@ -1888,9 +1888,9 @@ declare module 'fairygui-cc/gears/GearFontSize' {
     }
 }
 
-declare module 'fairygui-cc/gears/GearIcon' {
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
-    import { GearBase } from "fairygui-cc/gears/GearBase";
+declare module 'fairygui-ccc370/gears/GearIcon' {
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
+    import { GearBase } from "fairygui-ccc370/gears/GearBase";
     export class GearIcon extends GearBase {
         protected init(): void;
         protected addStatus(pageId: string, buffer: ByteBuffer): void;
@@ -1899,9 +1899,9 @@ declare module 'fairygui-cc/gears/GearIcon' {
     }
 }
 
-declare module 'fairygui-cc/gears/GearLook' {
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
-    import { GearBase } from "fairygui-cc/gears/GearBase";
+declare module 'fairygui-ccc370/gears/GearLook' {
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
+    import { GearBase } from "fairygui-ccc370/gears/GearBase";
     export class GearLook extends GearBase {
         protected init(): void;
         protected addStatus(pageId: string, buffer: ByteBuffer): void;
@@ -1910,9 +1910,9 @@ declare module 'fairygui-cc/gears/GearLook' {
     }
 }
 
-declare module 'fairygui-cc/gears/GearSize' {
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
-    import { GearBase } from "fairygui-cc/gears/GearBase";
+declare module 'fairygui-ccc370/gears/GearSize' {
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
+    import { GearBase } from "fairygui-ccc370/gears/GearBase";
     export class GearSize extends GearBase {
         protected init(): void;
         protected addStatus(pageId: string, buffer: ByteBuffer): void;
@@ -1922,9 +1922,9 @@ declare module 'fairygui-cc/gears/GearSize' {
     }
 }
 
-declare module 'fairygui-cc/gears/GearText' {
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
-    import { GearBase } from "fairygui-cc/gears/GearBase";
+declare module 'fairygui-ccc370/gears/GearText' {
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
+    import { GearBase } from "fairygui-ccc370/gears/GearBase";
     export class GearText extends GearBase {
         protected init(): void;
         protected addStatus(pageId: string, buffer: ByteBuffer): void;
@@ -1933,9 +1933,9 @@ declare module 'fairygui-cc/gears/GearText' {
     }
 }
 
-declare module 'fairygui-cc/gears/GearXY' {
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
-    import { GearBase } from "fairygui-cc/gears/GearBase";
+declare module 'fairygui-ccc370/gears/GearXY' {
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
+    import { GearBase } from "fairygui-ccc370/gears/GearBase";
     export class GearXY extends GearBase {
         positionsInPercent: boolean;
         protected init(): void;
@@ -1947,7 +1947,7 @@ declare module 'fairygui-cc/gears/GearXY' {
     }
 }
 
-declare module 'fairygui-cc/display/BlendMode' {
+declare module 'fairygui-ccc370/display/BlendMode' {
     import { Node } from "cc";
     export enum BlendMode {
         Normal = 0,
@@ -1969,9 +1969,9 @@ declare module 'fairygui-cc/display/BlendMode' {
     }
 }
 
-declare module 'fairygui-cc/display/Image' {
+declare module 'fairygui-ccc370/display/Image' {
     import { Sprite } from "cc";
-    import { FillMethod, FillOrigin, FlipType } from "fairygui-cc/FieldTypes";
+    import { FillMethod, FillOrigin, FlipType } from "fairygui-ccc370/FieldTypes";
     export class Image extends Sprite {
         constructor();
         get flip(): FlipType;
@@ -1987,9 +1987,9 @@ declare module 'fairygui-cc/display/Image' {
     }
 }
 
-declare module 'fairygui-cc/display/MovieClip' {
+declare module 'fairygui-ccc370/display/MovieClip' {
     import { Rect, SpriteFrame } from "cc";
-    import { Image } from "fairygui-cc/display/Image";
+    import { Image } from "fairygui-ccc370/display/Image";
     export interface Frame {
         rect: Rect;
         addDelay: number;
@@ -2018,10 +2018,10 @@ declare module 'fairygui-cc/display/MovieClip' {
     }
 }
 
-declare module 'fairygui-cc/event/Event' {
+declare module 'fairygui-ccc370/event/Event' {
     import { Event as CCEvent, Vec2 } from 'cc';
-    import { GObject } from 'fairygui-cc/GObject';
-    import { InputProcessor } from 'fairygui-cc/event/InputProcessor';
+    import { GObject } from 'fairygui-ccc370/GObject';
+    import { InputProcessor } from 'fairygui-ccc370/event/InputProcessor';
     export class Event extends CCEvent {
         static TOUCH_BEGIN: string;
         static TOUCH_MOVE: string;
@@ -2067,8 +2067,8 @@ declare module 'fairygui-cc/event/Event' {
     export function returnEvent(evt: Event): void;
 }
 
-declare module 'fairygui-cc/tween/GTween' {
-    import { GTweener } from "fairygui-cc/tween/GTweener";
+declare module 'fairygui-ccc370/tween/GTween' {
+    import { GTweener } from "fairygui-ccc370/tween/GTweener";
     export class GTween {
         static catchCallbackExceptions: boolean;
         static to(start: number, end: number, duration: number): GTweener;
@@ -2084,9 +2084,9 @@ declare module 'fairygui-cc/tween/GTween' {
     }
 }
 
-declare module 'fairygui-cc/tween/GTweener' {
-    import { GPath } from "fairygui-cc/tween/GPath";
-    import { TweenValue } from "fairygui-cc/tween/TweenValue";
+declare module 'fairygui-ccc370/tween/GTweener' {
+    import { GPath } from "fairygui-ccc370/tween/GPath";
+    import { TweenValue } from "fairygui-ccc370/tween/TweenValue";
     export class GTweener {
         _target: any;
         _propType: any;
@@ -2138,7 +2138,7 @@ declare module 'fairygui-cc/tween/GTweener' {
     }
 }
 
-declare module 'fairygui-cc/tween/EaseType' {
+declare module 'fairygui-ccc370/tween/EaseType' {
     export enum EaseType {
         Linear = 0,
         SineIn = 1,
@@ -2175,7 +2175,7 @@ declare module 'fairygui-cc/tween/EaseType' {
     }
 }
 
-declare module 'fairygui-cc/utils/UBBParser' {
+declare module 'fairygui-ccc370/utils/UBBParser' {
     export class UBBParser {
         protected _handlers: {
             [index: string]: (tagName: string, end: boolean, attr: string) => string;
@@ -2197,7 +2197,7 @@ declare module 'fairygui-cc/utils/UBBParser' {
     export var defaultParser: UBBParser;
 }
 
-declare module 'fairygui-cc/utils/ByteBuffer' {
+declare module 'fairygui-ccc370/utils/ByteBuffer' {
     import { Color } from "cc";
     export class ByteBuffer {
         stringTable: Array<string>;
@@ -2230,9 +2230,9 @@ declare module 'fairygui-cc/utils/ByteBuffer' {
     }
 }
 
-declare module 'fairygui-cc/Relations' {
-    import { GObject } from "fairygui-cc/GObject";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+declare module 'fairygui-ccc370/Relations' {
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class Relations {
         handling: GObject | null;
         sizeDirty: boolean;
@@ -2251,10 +2251,10 @@ declare module 'fairygui-cc/Relations' {
     }
 }
 
-declare module 'fairygui-cc/event/InputProcessor' {
+declare module 'fairygui-ccc370/event/InputProcessor' {
     import { Component, Vec2 } from "cc";
-    import { GObject } from "fairygui-cc/GObject";
-    import { Event as FUIEvent } from "fairygui-cc/event/Event";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { Event as FUIEvent } from "fairygui-ccc370/event/Event";
     export class InputProcessor extends Component {
         _captureCallback: (evt: FUIEvent) => void;
         constructor();
@@ -2271,10 +2271,10 @@ declare module 'fairygui-cc/event/InputProcessor' {
     }
 }
 
-declare module 'fairygui-cc/event/HitTest' {
+declare module 'fairygui-ccc370/event/HitTest' {
     import { Vec2 } from "cc";
-    import { GObject } from "fairygui-cc/GObject";
-    import { ByteBuffer } from "fairygui-cc/utils/ByteBuffer";
+    import { GObject } from "fairygui-ccc370/GObject";
+    import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export interface IHitTest {
         hitTest(pt: Vec2, globalPt: Vec2): boolean;
     }
@@ -2298,7 +2298,7 @@ declare module 'fairygui-cc/event/HitTest' {
     }
 }
 
-declare module 'fairygui-cc/Margin' {
+declare module 'fairygui-ccc370/Margin' {
     export class Margin {
         left: number;
         right: number;
@@ -2310,9 +2310,9 @@ declare module 'fairygui-cc/Margin' {
     }
 }
 
-declare module 'fairygui-cc/tween/GPath' {
+declare module 'fairygui-ccc370/tween/GPath' {
     import { Vec2 } from "cc";
-    import { GPathPoint } from "fairygui-cc/tween/GPathPoint";
+    import { GPathPoint } from "fairygui-ccc370/tween/GPathPoint";
     export class GPath {
         constructor();
         get length(): number;
@@ -2327,7 +2327,7 @@ declare module 'fairygui-cc/tween/GPath' {
     }
 }
 
-declare module 'fairygui-cc/tween/TweenValue' {
+declare module 'fairygui-ccc370/tween/TweenValue' {
     export class TweenValue {
         x: number;
         y: number;
@@ -2342,7 +2342,7 @@ declare module 'fairygui-cc/tween/TweenValue' {
     }
 }
 
-declare module 'fairygui-cc/tween/GPathPoint' {
+declare module 'fairygui-ccc370/tween/GPathPoint' {
     export enum CurveType {
         CRSpline = 0,
         Bezier = 1,
