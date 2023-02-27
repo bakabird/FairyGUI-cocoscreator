@@ -3,6 +3,7 @@ import { Controller } from "./Controller";
 import { BlendMode, BlendModeUtils } from "./display/BlendMode";
 import { Event as FUIEvent } from "./event/Event";
 import { RelationType, ObjectPropID } from "./FieldTypes";
+import { GButton } from "./GButton";
 import { GComponent } from "./GComponent";
 import { GearAnimation } from "./gears/GearAnimation";
 import { GearBase } from "./gears/GearBase";
@@ -16,6 +17,10 @@ import { GearSize } from "./gears/GearSize";
 import { GearText } from "./gears/GearText";
 import { GearXY } from "./gears/GearXY";
 import { GGroup } from "./GGroup";
+import { GImage } from "./GImage";
+import { GList } from "./GList";
+import { GLoader } from "./GLoader";
+import { GLoader3D } from "./GLoader3D";
 import { GTreeNode } from "./GTreeNode";
 import { PackageItem } from "./PackageItem";
 import { Relations } from "./Relations";
@@ -608,6 +613,30 @@ export class GObject {
 
     public get asCom(): GComponent {
         return <GComponent><any>this;
+    }
+
+    public get asBtn(): GButton {
+        return <GButton><any>this;
+    }
+
+    public get asList(): GList {
+        return <GList><any>this;
+    }
+
+    public get asLoader(): GLoader {
+        return <GLoader><any>this;
+    }
+
+    public get asLoader3D(): GLoader3D {
+        return <GLoader3D><any>this;
+    }
+
+    public get asImage(): GImage {
+        return <GImage><any>this;
+    }
+
+    public as<T>(): T {
+        return <T><any>this;
     }
 
     public static cast(obj: Node): GObject {

@@ -2904,6 +2904,24 @@ class GObject {
     get asCom() {
         return this;
     }
+    get asBtn() {
+        return this;
+    }
+    get asList() {
+        return this;
+    }
+    get asLoader() {
+        return this;
+    }
+    get asLoader3D() {
+        return this;
+    }
+    get asImage() {
+        return this;
+    }
+    as() {
+        return this;
+    }
     static cast(obj) {
         return obj["$gobj"];
     }

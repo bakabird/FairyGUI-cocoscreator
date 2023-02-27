@@ -2,6 +2,6 @@ node_modules
 .DS_Store
 demo/UIProject/.objs
 source/.vscode
-source/.vscode/settings.json
+source/build
 source/.vscode/settings.json
 source/.vscode/tasks.json
