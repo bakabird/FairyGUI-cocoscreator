@@ -106,6 +106,7 @@ declare module 'fairygui-ccc370/GObject' {
     import { GearXY } from "fairygui-ccc370/gears/GearXY";
     import { GGroup } from "fairygui-ccc370/GGroup";
     import { GImage } from "fairygui-ccc370/GImage";
+    import { GLabel } from "fairygui-ccc370/GLabel";
     import { GList } from "fairygui-ccc370/GList";
     import { GLoader } from "fairygui-ccc370/GLoader";
     import { GLoader3D } from "fairygui-ccc370/GLoader3D";
@@ -244,6 +245,7 @@ declare module 'fairygui-ccc370/GObject' {
         get asCom(): GComponent;
         get asBtn(): GButton;
         get asList(): GList;
+        get asLabel(): GLabel;
         get asLoader(): GLoader;
         get asLoader3D(): GLoader3D;
         get asImage(): GImage;

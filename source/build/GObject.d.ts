@@ -9,6 +9,7 @@ import { GearSize } from "./gears/GearSize";
 import { GearXY } from "./gears/GearXY";
 import { GGroup } from "./GGroup";
 import { GImage } from "./GImage";
+import { GLabel } from "./GLabel";
 import { GList } from "./GList";
 import { GLoader } from "./GLoader";
 import { GLoader3D } from "./GLoader3D";
@@ -149,6 +150,7 @@ export declare class GObject {
     get asCom(): GComponent;
     get asBtn(): GButton;
     get asList(): GList;
+    get asLabel(): GLabel;
     get asLoader(): GLoader;
     get asLoader3D(): GLoader3D;
     get asImage(): GImage;

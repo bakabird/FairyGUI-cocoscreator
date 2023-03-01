@@ -18,6 +18,7 @@ import { GearText } from "./gears/GearText";
 import { GearXY } from "./gears/GearXY";
 import { GGroup } from "./GGroup";
 import { GImage } from "./GImage";
+import { GLabel } from "./GLabel";
 import { GList } from "./GList";
 import { GLoader } from "./GLoader";
 import { GLoader3D } from "./GLoader3D";
@@ -621,6 +622,10 @@ export class GObject {
 
     public get asList(): GList {
         return <GList><any>this;
+    }
+
+    public get asLabel(): GLabel {
+        return <GLabel><any>this;
     }
 
     public get asLoader(): GLoader {

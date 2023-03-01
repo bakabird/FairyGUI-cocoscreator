@@ -466,6 +466,9 @@ export class GObject {
     get asList() {
         return this;
     }
+    get asLabel() {
+        return this;
+    }
     get asLoader() {
         return this;
     }
