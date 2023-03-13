@@ -1,6 +1,6 @@
 {
   "name": "fairygui-ccc370",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "fairygui for cocoscreator v3.7.0",
   "main": "dist/fairygui-ccc370.mjs",
   "types": "dist/fairygui-ccc370.d.ts",
