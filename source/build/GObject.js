@@ -478,6 +478,15 @@ export class GObject {
     get asImage() {
         return this;
     }
+    get asTextField() {
+        return this;
+    }
+    get asGraph() {
+        return this;
+    }
+    get asGroup() {
+        return this;
+    }
     as() {
         return this;
     }

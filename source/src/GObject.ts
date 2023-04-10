@@ -16,12 +16,14 @@ import { GearLook } from "./gears/GearLook";
 import { GearSize } from "./gears/GearSize";
 import { GearText } from "./gears/GearText";
 import { GearXY } from "./gears/GearXY";
+import { GGraph } from "./GGraph";
 import { GGroup } from "./GGroup";
 import { GImage } from "./GImage";
 import { GLabel } from "./GLabel";
 import { GList } from "./GList";
 import { GLoader } from "./GLoader";
 import { GLoader3D } from "./GLoader3D";
+import { GTextField } from "./GTextField";
 import { GTreeNode } from "./GTreeNode";
 import { PackageItem } from "./PackageItem";
 import { Relations } from "./Relations";
@@ -638,6 +640,18 @@ export class GObject {
 
     public get asImage(): GImage {
         return <GImage><any>this;
+    }
+
+    public get asTextField(): GTextField {
+        return <GTextField><any>this;
+    }
+
+    public get asGraph(): GGraph {
+        return <GGraph><any>this;
+    }
+
+    public get asGroup(): GGroup {
+        return <GGroup><any>this;
     }
 
     public as<T>(): T {

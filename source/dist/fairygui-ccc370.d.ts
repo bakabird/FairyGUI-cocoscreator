@@ -104,12 +104,14 @@ declare module 'fairygui-ccc370/GObject' {
     import { GearLook } from "fairygui-ccc370/gears/GearLook";
     import { GearSize } from "fairygui-ccc370/gears/GearSize";
     import { GearXY } from "fairygui-ccc370/gears/GearXY";
+    import { GGraph } from "fairygui-ccc370/GGraph";
     import { GGroup } from "fairygui-ccc370/GGroup";
     import { GImage } from "fairygui-ccc370/GImage";
     import { GLabel } from "fairygui-ccc370/GLabel";
     import { GList } from "fairygui-ccc370/GList";
     import { GLoader } from "fairygui-ccc370/GLoader";
     import { GLoader3D } from "fairygui-ccc370/GLoader3D";
+    import { GTextField } from "fairygui-ccc370/GTextField";
     import { GTreeNode } from "fairygui-ccc370/GTreeNode";
     import { PackageItem } from "fairygui-ccc370/PackageItem";
     import { Relations } from "fairygui-ccc370/Relations";
@@ -249,6 +251,9 @@ declare module 'fairygui-ccc370/GObject' {
         get asLoader(): GLoader;
         get asLoader3D(): GLoader3D;
         get asImage(): GImage;
+        get asTextField(): GTextField;
+        get asGraph(): GGraph;
+        get asGroup(): GGroup;
         as<T>(): T;
         static cast(obj: Node): GObject;
         get text(): string | null;
@@ -449,6 +454,10 @@ declare module 'fairygui-ccc370/GTextField' {
     import { GObject } from "fairygui-ccc370/GObject";
     import { ByteBuffer } from "fairygui-ccc370/utils/ByteBuffer";
     export class GTextField extends GObject {
+        /**
+          * 调整行高转换比例
+          */
+        static LineHeightAjuster: number;
         _label: Label;
         protected _font: string;
         protected _realFont: string | Font;

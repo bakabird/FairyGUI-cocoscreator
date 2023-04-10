@@ -3,6 +3,10 @@ import { AutoSizeType } from "./FieldTypes";
 import { GObject } from "./GObject";
 import { ByteBuffer } from "./utils/ByteBuffer";
 export declare class GTextField extends GObject {
+    /**
+     * 调整行高转换比例
+     */
+    static LineHeightAjuster: number;
     _label: Label;
     protected _font: string;
     protected _realFont: string | Font;

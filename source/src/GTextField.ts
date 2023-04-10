@@ -10,6 +10,11 @@ import { toGrayedColor } from "./utils/ToolSet";
 import { defaultParser } from "./utils/UBBParser";
 
 export class GTextField extends GObject {
+    /**
+     * 调整行高转换比例
+     */
+    public static LineHeightAjuster: number = 1;
+
     public _label: Label;
 
     protected _font: string;
@@ -447,7 +452,7 @@ export class GTextField extends GObject {
         }
         else {
             this._label.fontSize = this._fontSize;
-            this._label.lineHeight = this._fontSize + this._leading;
+            this._label.lineHeight = this._fontSize + this._leading * GTextField.LineHeightAjuster;
         }
     }
 

@@ -2922,6 +2922,15 @@ class GObject {
     get asImage() {
         return this;
     }
+    get asTextField() {
+        return this;
+    }
+    get asGraph() {
+        return this;
+    }
+    get asGroup() {
+        return this;
+    }
     as() {
         return this;
     }
@@ -6197,7 +6206,7 @@ class GTextField extends GObject {
         }
         else {
             this._label.fontSize = this._fontSize;
-            this._label.lineHeight = this._fontSize + this._leading;
+            this._label.lineHeight = this._fontSize + this._leading * GTextField.LineHeightAjuster;
         }
     }
     updateOverflow() {
@@ -6314,6 +6323,10 @@ class GTextField extends GObject {
             this.text = str;
     }
 }
+/**
+ * 调整行高转换比例
+ */
+GTextField.LineHeightAjuster = 1;
 
 class RichTextImageAtlas extends SpriteAtlas {
     getSpriteFrame(key) {
