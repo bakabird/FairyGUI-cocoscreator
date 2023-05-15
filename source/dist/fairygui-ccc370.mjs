@@ -6434,7 +6434,7 @@ class GRichTextField extends GTextField {
                 fontSize = font.fntConfig.fontSize;
         }
         this._richText.fontSize = fontSize;
-        this._richText.lineHeight = fontSize + this._leading * 2;
+        this._richText.lineHeight = fontSize + this._leading * GTextField.LineHeightAjuster;
     }
     updateOverflow() {
         if (this._autoSize == AutoSizeType.Both)
